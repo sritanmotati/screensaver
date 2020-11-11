@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Product Sans";
+  font-style: normal;
+  src: local("Open Sans"), local("OpenSans"),
+    url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2)
+      format("woff2");
+}
+body {
+  font-family: "Product Sans";
+  background: url("https://wallpapershome.com/images/wallpapers/lake-aurora-3840x2160-4k-hd-wallpaper-florida-night-sky-stars-12771.jpg");
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+i {
+  margin: 0.3rem 0;
+}
+button {
+  border-radius: 50%;
+  border: none;
+  color: black;
+  background: linear-gradient(90deg, rgb(0, 255, 21) 0%, rgb(0, 217, 255) 100%);
+  box-shadow: 0 0 0.25rem black;
+  transition-duration: 0.2s;
+  outline: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+button:hover {
+  box-shadow: 0 0 0.5rem black;
+  background: linear-gradient(90deg, rgb(1, 218, 19) 0%, rgb(1, 178, 209) 100%);
+}
+.text {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin: 30vh 5vw;
+}
+h1 {
+  font-size: 5rem;
+  margin: 0;
+  padding: 0;
+  font-weight: 200;
+}
+h2 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  font-weight: 200;
+}
+.settings {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 0.7rem;
+  border-radius: 10px;
+}
+#background-url {
+  border-radius: 0.3rem;
+  border-width: 0.1rem;
+  margin-right: 0.8rem;
+  margin-left: 0.3rem;
+  font-family: "Product Sans";
+}
+.blur-background {
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  color: white;
+}
+#background-url,
+#background-label {
+  animation-name: slideIn;
+  animation-duration: 0.3s;
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+}
